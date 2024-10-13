@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" id="htmlPage">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Click Per Speed</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/toggleButton.css">
+    <link rel="stylesheet" href="css/font-style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+
+
+
+    <div class="d-flex justify-content-between mt-5 ms-5 me-5 flex-column flex-sm-row">
+      <div class="dropdown mb-3 mb-sm-0">
+        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Timer</button>
+        <ul class="dropdown-menu">
+          <li><a href="#" id = "t1"  class="dropdown-item" style="color:#FFA12B">10 seconds</a></li>
+          <li><a href="#" id = "t2"  class="dropdown-item" style="color:#FFA12B">20 seconds</a></li>
+          <li><a href="#" id = "t3"  class="dropdown-item" style="color:#FFA12B">30 seconds</a></li>
+        </ul>
+      </div>
+    
+      <div class="mb-3 mb-sm-0" style="font-size: 20px;">
+        <p class="fw-bold d-inline-block">Click per speed: </p>
+        <p class="fw-bolder d-inline-block ps-2" id = "cps" style="color: #FFA12B">0</p>
+      </div>
+    
+      <div>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+    
+    </div>
+    
+
+  <div class="center d-flex flex-column align-items-center" style="margin-top: 12%">
+    <h1 class="display-4 mb-2 fw-bolder">Click Per Speed!</h1>
+    <p class="fw-lighter mt-5" style="font-size: 30px;" id="timer" >??</p>
+    <a href="#"   class="mt-5 link" id="link">Try Again</a>
+      <div>
+          <div class="button" id="clickButton" onclick="incrementButton()">
+            <a href="#">Click it!</a>
+          </div>
+        </div>
+  </div>
+
+
+
+  <script src="js/functionality.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/darkmodetoggle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
