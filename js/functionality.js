@@ -44,33 +44,33 @@ function incrementButton() {
         // Display the result messages based on initialSelectedTime
         if (initialSelectedTime === 10) {
           if (clickCount >= 25 && clickCount <= 50) {
-            document.getElementById("timer").innerHTML = "You're as slow as a 3-legged dog!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: You're as slow as a 3-legged dog!";
           } else if (clickCount >= 51 && clickCount <= 75) {
-            document.getElementById("timer").innerHTML = "You're good, but don't get ahead of yourself!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: You're good, but don't get ahead of yourself!";
           } else if (clickCount >= 76 && clickCount <=90) {
-            document.getElementById("timer").innerHTML = "Touch some grass!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: Touch some grass!";
           } else {
-            document.getElementById("timer").innerHTML = "You might be slow as a turtle, or fast as a cheetah.";
+            document.getElementById("timer").innerHTML = clickCount + "cps: You might be slow as a turtle, or fast as a cheetah.";
           }
         } else if (initialSelectedTime === 20) {
           if (clickCount >= 50 && clickCount <= 70) {
-            document.getElementById("timer").innerHTML = "I think you can do better.";
+            document.getElementById("timer").innerHTML = clickCount + "cps: I think you can do better.";
           } else if (clickCount >= 71 && clickCount <= 80) {
-            document.getElementById("timer").innerHTML = "You have some terminator fingers!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: You have some terminator fingers!";
           } else if (clickCount >= 81 && clickCount <=100) {
-            document.getElementById("timer").innerHTML = "Get A life!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: Get A life!";
           } else {
-            document.getElementById("timer").innerHTML = "You might be slow as a turtle, or fast as a cheetah.";
+            document.getElementById("timer").innerHTML = clickCount + "cps: You might be slow as a turtle, or fast as a cheetah.";
           }
         } else if (initialSelectedTime === 30) {
           if (clickCount >= 75 && clickCount <= 100) {
-            document.getElementById("timer").innerHTML = "We both know that you can do better!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: We both know that you can do better!";
           } else if (clickCount >= 101 && clickCount <= 120) {
-            document.getElementById("timer").innerHTML = "Nicely done, but could be better!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: Nicely done, but could be better!";
           } else if (clickCount >= 150 && clickCount <=180) {
-            document.getElementById("timer").innerHTML = "Take A Bath Man!";
+            document.getElementById("timer").innerHTML = clickCount + "cps: Take A Bath Man!";
           } else {
-            document.getElementById("timer").innerHTML = "You might be slow as a turtle, or fast as a cheetah.";
+            document.getElementById("timer").innerHTML = clickCount + "cps: You might be slow as a turtle, or fast as a cheetah.";
           }
         }
 
